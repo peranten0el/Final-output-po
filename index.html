@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laptop Guide</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:black;
+    color:white;
+    font-family:'Poppins', sans-serif;
+}
+
+/* HEADER */
+header{
+    background:#5a1f00;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:30px;
+    font-family:'Playfair Display', serif;
+}
+
+.search-box{
+    display:flex;
+    align-items:center;
+}
+
+.search-box input{
+    padding:7px 10px;
+    border:none;
+    outline:none;
+    border-radius:3px 0 0 3px;
+}
+
+.search-box button{
+    padding:7px 12px;
+    border:none;
+    background:black;
+    color:white;
+    cursor:pointer;
+    border-radius:0 3px 3px 0;
+}
+
+.search-box button:hover{
+    background:#333;
+}
+
+/* CONTENT */
+section{
+    padding:60px 80px;
+}
+
+.row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    margin-bottom:50px;
+}
+
+.row img{
+    width:400px;
+    border-radius:5px;
+}
+
+.text{
+    max-width:500px;
+}
+
+h2{
+    text-align:center;
+    font-size:30px;
+    margin-bottom:40px;
+    font-family:'Playfair Display', serif;
+}
+
+hr{
+    border:1px solid #444;
+    margin:40px 0;
+}
+
+@media(max-width:768px){
+    .row{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .row img{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">LAPTOP GUIDE</div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <button>🔍</button>
+    </div>
+</header>
+
+<section>
+
+<div class="row">
+    <div class="text">
+        <p>Here’s a laptop on a desk. This is usually how students or workers set it up to study or finish tasks comfortably.</p>
+    </div>
+    <img src="laptop1.jpg" alt="">
+</div>
+
+<div class="row">
+    <img src="laptop2.jpg" alt="">
+    <div class="text">
+        <p>This shows the screen where you can see everything you're working on. It's what you look at when typing, watching videos, or browsing the internet.</p>
+    </div>
+</div>
+
+<hr>
+
+<h2>PARTS OF A LAPTOP</h2>
+
+<div class="row">
+    <div class="text">
+        <p>The keyboard is used for typing letters, numbers, and shortcuts. It's how you give instructions to the laptop.</p>
+    </div>
+    <img src="keyboard.jpg" alt="">
+</div>
+
+<div class="row">
+    <img src="charger.jpg" alt="">
+    <div class="text">
+        <p>This is the charger. It keeps the laptop’s battery full so you can keep using it without interruptions.</p>
+    </div>
+</div>
+
+<hr>
+
+<h2>USES OF A LAPTOP</h2>
+
+<div class="row">
+    <img src="student.jpg" alt="">
+    <div class="text">
+        <p>A student using a laptop. Laptops are useful for doing assignments, researching, and attending online classes.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="text">
+        <p>Laptops can also be used for watching videos, playing games, or joining online meetings.</p>
+    </div>
+    <img src="meeting.jpg" alt="">
+</div>
+
+</section>
+
+</body>
+</html>
